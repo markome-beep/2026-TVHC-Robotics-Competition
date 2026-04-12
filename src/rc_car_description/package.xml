@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rc_car_description</name>
+  <version>1.0.0</version>
+  <description>RC car URDF + Cat Robotics challenge world for ROS2 Humble + Ignition Gazebo 6</description>
+  <maintainer email="user@example.com">RC Car Sim</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>rviz2</depend>
+
+  <!-- Ignition Gazebo 6 (Fortress) — Humble packages -->
+  <depend>ros_ign_gazebo</depend>
+  <depend>ros_ign_bridge</depend>
+  <depend>ros_ign_image</depend>
+  <depend>ignition-gazebo6</depend>
+
+  <!-- ros2_control -->
+  <depend>ros2_control</depend>
+  <depend>ros2_controllers</depend>
+  <depend>ign_ros2_control</depend>
+  <depend>ackermann_steering_controller</depend>
+  <depend>joint_state_broadcaster</depend>
+
+  <!-- TF / messages -->
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rosgraph_msgs</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
