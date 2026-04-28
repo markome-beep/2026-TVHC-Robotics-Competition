@@ -1,0 +1,20 @@
+[package]
+name = "hello_rust"
+version = "0.0.1"
+authors = ["markop1 <markop1@todo.todo>"]
+edition = "2021"
+
+[[bin]]
+name = "hello_rust"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = {version = "1", features = ["backtrace"]}
+rclrs = "*"
+
+# This specific version is compatible with Rust 1.75
+backtrace = "=0.3.74"
+
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# <dependency> = "*" 

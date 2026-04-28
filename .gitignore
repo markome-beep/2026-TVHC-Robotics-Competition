@@ -1,0 +1,39 @@
+# --- colcon workspace outputs (root-anchored) -------------------------------
+/build/
+/install/
+/log/
+
+# --- Nix ---------------------------------------------------------------------
+.direnv/
+result
+result-*
+
+# --- Rust / Cargo ------------------------------------------------------------
+# `target/` lives next to each Cargo.toml. Keep Cargo.lock under version
+# control (hello_rust is a binary crate).
+**/target/
+
+# --- PlatformIO --------------------------------------------------------------
+**/.pio/
+
+# --- Editor / LSP caches and build artifacts ---------------------------------
+# clangd writes its index into .cache/clangd/ next to the project.
+**/.cache/
+# compile_commands.json is regenerated on every colcon build of arduino_esp32
+# (see src/arduino_esp32/CMakeLists.txt's `compiledb` target).
+compile_commands.json
+
+# --- Editor scratch ----------------------------------------------------------
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+
+# --- OS detritus -------------------------------------------------------------
+.DS_Store
+Thumbs.db
