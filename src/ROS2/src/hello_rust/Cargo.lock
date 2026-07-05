@@ -1158,7 +1158,7 @@ checksum = "b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa"
 
 [[patch.unused]]
 name = "action_msgs"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "actionlib_msgs"
@@ -1166,11 +1166,11 @@ version = "4.9.1"
 
 [[patch.unused]]
 name = "builtin_interfaces"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "composition_interfaces"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "diagnostic_msgs"
@@ -1186,7 +1186,11 @@ version = "4.9.1"
 
 [[patch.unused]]
 name = "lifecycle_msgs"
-version = "1.2.2"
+version = "1.2.3"
+
+[[patch.unused]]
+name = "map_msgs"
+version = "2.1.0"
 
 [[patch.unused]]
 name = "nav_msgs"
@@ -1194,7 +1198,7 @@ version = "4.9.1"
 
 [[patch.unused]]
 name = "rcl_interfaces"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "rmw_dds_common"
@@ -1202,7 +1206,7 @@ version = "1.6.0"
 
 [[patch.unused]]
 name = "rosgraph_msgs"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "sensor_msgs"
@@ -1214,7 +1218,7 @@ version = "4.9.1"
 
 [[patch.unused]]
 name = "statistics_msgs"
-version = "1.2.2"
+version = "1.2.3"
 
 [[patch.unused]]
 name = "std_msgs"
@@ -1230,7 +1234,11 @@ version = "4.9.1"
 
 [[patch.unused]]
 name = "test_msgs"
-version = "1.2.2"
+version = "1.2.3"
+
+[[patch.unused]]
+name = "tf2_msgs"
+version = "0.25.20"
 
 [[patch.unused]]
 name = "trajectory_msgs"
