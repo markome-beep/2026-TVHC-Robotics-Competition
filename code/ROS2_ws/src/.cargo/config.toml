@@ -1,0 +1,71 @@
+[patch.crates-io.test_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/test_msgs/rust"
+
+[patch.crates-io.std_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/std_msgs/rust"
+
+[patch.crates-io.map_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/map_msgs/rust"
+
+[patch.crates-io.nav_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/nav_msgs/rust"
+
+[patch.crates-io.action_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/action_msgs/rust"
+
+[patch.crates-io.example_interfaces]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/example_interfaces/rust"
+
+[patch.crates-io.std_srvs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/std_srvs/rust"
+
+[patch.crates-io.tf2_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/tf2_msgs/rust"
+
+[patch.crates-io.sensor_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/sensor_msgs/rust"
+
+[patch.crates-io.trajectory_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/trajectory_msgs/rust"
+
+[patch.crates-io.visualization_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/visualization_msgs/rust"
+
+[patch.crates-io.geometry_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/geometry_msgs/rust"
+
+[patch.crates-io.shape_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/shape_msgs/rust"
+
+[patch.crates-io.diagnostic_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/diagnostic_msgs/rust"
+
+[patch.crates-io.rosgraph_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/rosgraph_msgs/rust"
+
+[patch.crates-io.composition_interfaces]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/composition_interfaces/rust"
+
+[patch.crates-io.stereo_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/stereo_msgs/rust"
+
+[patch.crates-io.statistics_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/statistics_msgs/rust"
+
+[patch.crates-io.unique_identifier_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/unique_identifier_msgs/rust"
+
+[patch.crates-io.lifecycle_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/lifecycle_msgs/rust"
+
+[patch.crates-io.rmw_dds_common]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/rmw_dds_common/rust"
+
+[patch.crates-io.rcl_interfaces]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/rcl_interfaces/rust"
+
+[patch.crates-io.actionlib_msgs]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/actionlib_msgs/rust"
+
+[patch.crates-io.builtin_interfaces]
+path = "/nix/store/62y2ikrfap9wdfzc171qam6baqgqjjxg-ros-env/share/builtin_interfaces/rust"

@@ -1,7 +1,7 @@
 # --- colcon workspace outputs (root-anchored) -------------------------------
-/build/
-/install/
-/log/
+**/build/
+**/install/
+**/log/
 
 # --- Nix ---------------------------------------------------------------------
 .direnv/

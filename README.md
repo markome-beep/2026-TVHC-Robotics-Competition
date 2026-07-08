@@ -3,9 +3,8 @@ Documentation, source code, and notes for The Very Hungry Caterpillars
 
 .
 ├── docs         -> Documentation & Notes for project
-├── misc-tools   -> Miscellaneous tools for project
+├── CAD          -> CAD files for project
 ├── README.md    -> This file
-└── src          -> Source code for project
-    ├── ESP32    -> Source code for ESP32 board
-    └── ROS2     -> Source code for ROS2 project
-
+└── code         -> Source code for project
+    ├── ESP32    -> Source code for ESP32
+    └── ROS2_ws  -> Source code for ROS2 workspace

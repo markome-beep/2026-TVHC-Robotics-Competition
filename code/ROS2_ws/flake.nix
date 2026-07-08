@@ -19,11 +19,14 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          name = "Example project";
+          name = "ROS2";
+
+          postPatch = ''
+            patchShebangs .
+          '';
 
           packages = [
             pkgs.colcon
-            pkgs.patchShebangs
 
             # Rust pkgs
             pkgs.cargo
@@ -40,44 +43,40 @@
             # colcon extensions for cargo
             pkgs.python3Packages.colcon-cargo
             pkgs.python3Packages.colcon-ros-cargo
-
-            # ... other non-ROS packages
             (
               with pkgs.rosPackages.humble;
               buildEnv {
                 paths = [
                   ament-cmake-core
                   ros-core
+
                   # rclrs links against these by default
                   rcl
                   rcl-action
                   rcl-lifecycle
+                  rcl-interfaces
+
                   rmw
                   rmw-implementation
+                  rmw-fastrtps-cpp
+
                   rosidl-runtime-c
                   rosidl-typesupport-c
 
                   # Message packages rclrs hard-links against
-                  action-msgs
-                  builtin-interfaces
                   example-interfaces
-                  rcl-interfaces
-                  rosgraph-msgs
+                  builtin-interfaces
                   test-msgs
+                  action-msgs
+                  rosgraph-msgs
                   unique-identifier-msgs
                   std-msgs
                   geometry-msgs
                   sensor-msgs
+
                   tf2-tools
                   tf2-ros
                   rviz2
-                  rmw-fastrtps-cpp
-
-                  # Pick at least one RMW implementation
-                  # rmw-cyclonedds-cpp
-                  # or: rmw-fastrtps-cpp
-                  # ... other ROS packages
-
                 ];
               }
             )
@@ -85,9 +84,4 @@
         };
       }
     );
-
-  nixConfig = {
-    extra-substituters = [ "https://ros.cachix.org" ];
-    extra-trusted-public-keys = [ "ros.cachix.org-1:dSyZxI8geDCJrwgvCOHDoAfOm5sV1wCPjBkKL+38Rvo=" ];
-  };
 }
