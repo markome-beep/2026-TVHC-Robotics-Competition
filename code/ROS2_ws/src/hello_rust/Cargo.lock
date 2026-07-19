@@ -1193,6 +1193,10 @@ name = "map_msgs"
 version = "2.1.0"
 
 [[patch.unused]]
+name = "micro_ros_msgs"
+version = "1.0.0"
+
+[[patch.unused]]
 name = "nav_msgs"
 version = "4.9.1"
 

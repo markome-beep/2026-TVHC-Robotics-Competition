@@ -15,4 +15,6 @@ dependencies:
   #   # All dependencies of `main` are public by default.
   #   public: true
   espressif/led_strip: '*'
-  espressif/as5600: '*'
+  micro-ros:
+    git: https://github.com/micro-ROS/micro_ros_espidf_component.git
+    version: humble

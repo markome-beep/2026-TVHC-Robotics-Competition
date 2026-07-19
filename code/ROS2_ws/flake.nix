@@ -1,7 +1,7 @@
 {
   inputs = {
+    nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay/develop";
     nixpkgs.follows = "nix-ros-overlay/nixpkgs"; # IMPORTANT!!!
-    nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay/master";
   };
   outputs =
     {
@@ -21,34 +21,34 @@
         devShells.default = pkgs.mkShell {
           name = "ROS2";
 
-          postPatch = ''
-            patchShebangs .
-          '';
-
-          packages = [
-            pkgs.colcon
+          packages = with pkgs; [
+            colcon
 
             # Rust pkgs
-            pkgs.cargo
-            pkgs.rustc
-            pkgs.rustfmt
-            pkgs.clippy
+            cargo
+            rustc
+            rustfmt
+            clippy
 
             # ESP32 / micro-ROS firmware build (arduino_esp32 package)
-            pkgs.platformio-core
-            pkgs.esptool
-            pkgs.python3
+            platformio-core
+            esptool
+            python3
 
-            pkgs.cargo-ament-build # provides `cargo ament-build`
+            cargo-ament-build # provides `cargo ament-build`
+
             # colcon extensions for cargo
-            pkgs.python3Packages.colcon-cargo
-            pkgs.python3Packages.colcon-ros-cargo
+            python3Packages.colcon-cargo
+            python3Packages.colcon-ros-cargo
+
             (
-              with pkgs.rosPackages.humble;
+              with rosPackages.jazzy;
               buildEnv {
                 paths = [
                   ament-cmake-core
                   ros-core
+                  fastcdr
+                  spdlog
 
                   # rclrs links against these by default
                   rcl
@@ -73,6 +73,7 @@
                   std-msgs
                   geometry-msgs
                   sensor-msgs
+                  micro-ros-msgs
 
                   tf2-tools
                   tf2-ros

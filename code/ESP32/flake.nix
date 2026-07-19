@@ -2,7 +2,6 @@
   description = "ESP32 Development Environment";
 
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixpkgs-esp-dev.url = "github:mirrexagon/nixpkgs-esp-dev";
     nixpkgs.follows = "nix-ros-overlay/nixpkgs"; # IMPORTANT!!!
     nix-ros-overlay.url = "github:lopsided98/nix-ros-overlay/master";
@@ -31,7 +30,6 @@
 
           pkgs.colcon
           pkgs.python314
-          # pkgs.python314Packages.colcon
           pkgs.python314Packages.catkin-pkg
           pkgs.python314Packages.lark
           pkgs.python314Packages.empy
